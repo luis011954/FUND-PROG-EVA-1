@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="clitx"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-10 05:18:35 p. m."/>
+        <attribute name="created" value="Y2xpdHg7TFVJUzsyMDIzLTEwLTEwOzA1OjA3OjA5IHAuIG0uOzIzMjc="/>
+        <attribute name="edited" value="Y2xpdHg7TFVJUzsyMDIzLTEwLTEwOzA1OjE4OjM1IHAuIG0uOzE7MjQzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor1" type="Integer" array="False" size=""/>
+            <declare name="valor2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introducir el valor 1&quot;" newline="True"/>
+            <input variable="valor1"/>
+            <output expression="&quot;Introducir el valor 2&quot;" newline="True"/>
+            <input variable="valor2"/>
+            <if expression="valor1 &gt; valor2">
+                <then>
+                    <output expression="&quot;El valor mas grande es&quot;" newline="True"/>
+                    <output expression="valor1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="valor1 = valor2">
+                        <then>
+                            <output expression="&quot;Ambos valores son iguales&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;El valor mas grande es &quot;" newline="True"/>
+                            <output expression="valor2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
